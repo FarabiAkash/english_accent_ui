@@ -187,6 +187,64 @@ export default function ApiDocumentation() {
             </div>
           </div>
 
+          {/* Deployment Section */}
+
+          <div className="doc-section">
+            <h3 className="section-title">🚀 Deployment</h3>
+            <p className="deployment-description">
+              The application follows a modern microservices architecture with
+              separate deployments for frontend and backend:
+            </p>
+            <ul className="deployment-list">
+              <li>
+                <strong>Backend Deployed at:</strong>{" "}
+                <a
+                  href="https://englishaccentai.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://englishaccentai.onrender.com/
+                </a>
+                <div className="deployment-details">
+                  • Hosted on Render.com for reliable cloud hosting
+                  <br />
+                  • Automated deployment from GitHub repository
+                  <br />• Environment variables configured for API keys
+                </div>
+              </li>
+              <li>
+                <strong>Frontend Deployed at:</strong>{" "}
+                <a
+                  href="https://english-accent-ui.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://english-accent-ui.vercel.app/
+                </a>
+                <div className="deployment-details">
+                  • Deployed on Vercel for optimal React.js performance
+                  <br />
+                  • Continuous deployment with automatic builds on push
+                  <br />• Environment variables set for API endpoints
+                </div>
+              </li>
+            </ul>
+            <div className="deployment-process">
+              <h4>Deployment Process:</h4>
+              <p>
+                1. <strong>Code Push:</strong> Changes pushed to main branch
+                trigger automatic deployments
+                <br />
+                2. <strong>Build Process:</strong> Both platforms run build
+                scripts and install dependencies
+                <br />
+                3. <strong>Environment Setup:</strong> Production environment
+                variables are applied
+                <br />
+              </p>
+            </div>
+          </div>
+
           {/* Author Section */}
           <div className="doc-section">
             <h3 className="section-title">👨‍💻 Author</h3>
