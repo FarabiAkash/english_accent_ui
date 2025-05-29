@@ -21,15 +21,18 @@ export default function AccentAnalyzer() {
     setResult(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/accent-analysis/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          video_link: videoLink.trim(),
-        }),
-      });
+      const response = await fetch(
+        "https://englishaccentai.onrender.com/accent-analysis",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            video_link: videoLink.trim(),
+          }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
