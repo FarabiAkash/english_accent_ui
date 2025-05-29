@@ -253,7 +253,7 @@ export default function ApiDocumentation() {
                 <User className="author-icon" />
                 <div>
                   <h4 className="author-name">Al-Farabi Akash</h4>
-                  <p className="author-role">Full Stack Developer</p>
+                  <p className="author-role">LLM and Full Stack Developer</p>
                 </div>
               </div>
               <div className="contact-links">
